@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Poppins:wght@300;500;700;800&family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+  max-width: 3000px;
+  position: relative;
+  background: var(--backgroundColor);
+  overflow-x: hidden;
+  @media (max-width: 921px) {
+    body {
+      overflow: hidden;
+    }
+  }
+}
+:root {
+  --btnColor: #18c67e;
+  --titleColor: #18a068;
+  --hoverColor: #0e9c62;
+  --starColor: #18a068;
+  --whiteColor: #ffffff;
+  --whiteDeamColor: #dee3e1;
+  --backgroundColor: #171c1a;
+  --navBgColor: #171c1a;
+  --linearColor: #1c1c1c;
+  --footerBgColor: #1c1c1c;
+  --e-global-color-astglobalcolor6: #ff893c;
+  --borderColor: #889690;
+  --cardBorderColor: #3e4643;
+  --borradius: 4px;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+a {
+  color: var(--whiteDeamColor);
+  font-size: 1em;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.li.active {
+  color: var(--hoverColor);
+}
+.links a:hover {
+  color: var(--hoverColor);
+}
+.navLinks li a:hover {
+  color: var(--whiteColor);
+}
+.navLinks li .active {
+  color: var(--whiteColor);
+}
+
+.btn {
+  display: block;
+  background: var(--btnColor);
+  border-radius: var(--borradius);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  letter-spacing: 0.1em;
+  line-height: 3em;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.89em;
+  font-weight: 500;
+  color: #fff;
+}
+.borderBtn {
+  display: block;
+  border: var(--whiteColor) 1px solid;
+  border-radius: var(--borradius);
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 3em;
+  letter-spacing: 0.1em;
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+.btn:hover {
+  background: var(--hoverColor);
+}
+
+.flex {
+  display: flex;
+}
+
+.main_container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/******************** Any Thing txt *********************/
+.formLabel {
+  font-size: 1em;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: var(--whiteDeamColor);
+}
+.formLabel::after {
+  content: "*";
+  color: #f00;
+}
+.homeBold {
+  font-size: 6em;
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: var(--whiteColor);
+}
+/* title text */
+
+.titleText {
+  font-size: 1.1em;
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--hoverColor);
+  text-transform: uppercase;
+}
+
+.boldText {
+  font-size: 3em;
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: var(--whiteColor);
+  box-sizing: border-box;
+}
+.MdText {
+  font-size: 2em;
+  letter-spacing: 2px;
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--whiteColor);
+  box-sizing: border-box;
+}
+.MdboldText {
+  font-size: 1.8em;
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  color: var(--whiteColor);
+  line-height: 1em;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+}
+.SmboldText {
+  font-size: 1.2em;
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  color: var(--whiteColor);
+  line-height: 1.5em;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+}
+.Subtext {
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 380;
+  color: var(--whiteDeamColor);
+}
+.SubtextBold {
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: var(--whiteColor);
+  box-sizing: border-box;
+}
+.subContentText {
+  padding: 0 11em;
+  box-sizing: border-box;
+}
+
+/* **************************************************** */
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/******************** Conatiners ***********************/
+
+.containerOne {
+  padding: 6em 2em;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+.containerTwo {
+  padding: 6em 2em;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+.containerThree {
+  padding: 4em 1em;
+}
+
+.containerFour {
+  padding: 0 0 6em;
+}
+
+.cardImg img {
+  max-width: 106px;
+  min-height: 106px;
+}

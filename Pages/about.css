@@ -1,0 +1,524 @@
+/* imported google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700;800&family=Poppins:wght@300;500;700;800&family=Roboto:wght@300;400;500;700;900&display=swap");
+:root {
+  --btnColor: #18c67e;
+  --titleColor: #18a068;
+  --hoverColor: #0e9c62;
+  --starColor: #18a068;
+  --whiteColor: #ffffff;
+  --whiteDeamColor: #dee3e1;
+  --backgroundColor: #171c1a;
+  --navBgColor: #171c1a;
+  --linearColor: #1c1c1c;
+  --footerBgColor: #1c1c1c;
+  --e-global-color-astglobalcolor6: #ff893c;
+  --borderColor: #889690;
+  --cardBorderColor: #3e4643;
+  --borradius: 4px;
+}
+
+.HeaderImgContainer {
+  background-image: url(/Assets/images/AboutBg.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  max-width: inherit;
+  position: relative;
+  z-index: 1;
+}
+.HeaderImgContainer::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  background: var(--linearColor);
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+header {
+  height: 60px;
+  padding: 1rem 1.5rem;
+  position: relative;
+}
+.navBar {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navBtn {
+  width: 13em;
+  height: 3em;
+}
+.navLinks {
+  display: flex;
+  gap: 2em;
+}
+
+.logoNavCon {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 3.5em;
+}
+
+.toggle_menu {
+  font-size: 1.7em;
+  color: var(--whiteDeamColor);
+  cursor: pointer;
+  display: none;
+}
+.cross {
+  padding: 0.3em;
+  font-size: 2em;
+  color: var(--whiteDeamColor);
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: #dee3e1 1px dotted;
+  border-radius: 2px;
+}
+.dropMenu {
+  width: 0%;
+  height: 100vh;
+  background: var(--navBgColor);
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  transition: width 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropMenu.open {
+  width: 100%;
+}
+.dropMenuNav {
+  margin: 5em 0;
+}
+.dropMenu li a {
+  color: #fff;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9em;
+}
+.dropMenu li a.active {
+  color: var(--hoverColor);
+}
+
+/* About Containers */
+.containerOne {
+  padding: 6em 2em;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+.containerTwo {
+  padding: 6em 2em;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+.containerThree {
+  padding: 4em 1em;
+}
+
+.containerFour {
+  padding: 0 0 6em;
+}
+
+/* *********************** Content ************************** */
+.content {
+  margin: 8em 2.5em;
+}
+.aboutBold {
+  font-size: 6em;
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: var(--whiteColor);
+}
+
+.IrishBarFlexConatiner {
+  justify-content: space-between;
+  align-items: start;
+}
+
+.IrishBarTextContainer {
+  flex-direction: column;
+  gap: 2em;
+  max-width: 460px;
+}
+.IrishbarImgContainer {
+  position: relative;
+}
+.IrishbarImgContainer img {
+  max-width: 580px;
+  min-height: 470px;
+}
+.badgeImg svg {
+  width: 100%;
+  height: 100%;
+  max-width: 200px;
+  min-height: 200px;
+  position: absolute;
+  top: -12rem;
+  right: 1.5rem;
+  transform: rotate(20deg);
+}
+
+/* Owner Irish FlexConatainer */
+.OwnerIrishFlexConatainer {
+  justify-content: space-between;
+}
+.textOneContainer {
+  width: 100%;
+  height: 100%;
+  max-width: 390px;
+  padding: 0 1em;
+}
+.textTwoContainer {
+  max-width: 830px;
+}
+.socialText {
+  display: flex;
+  gap: 3em;
+}
+.socialSubtext {
+  font-size: 0.95em;
+  max-width: 370px;
+}
+.socialLinks {
+  gap: 1.5em;
+  padding: 0 0 2em;
+}
+.links a {
+  display: flex;
+  align-items: center;
+  gap: 0.78em;
+  font-size: 0.9em;
+}
+.OwnerBoldTxt {
+  font-size: 6.5em;
+}
+/* AboutVideoBg */
+.AboutVideoBg {
+  background: url(/Assets/images/pub-and-bar-about-video-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  max-width: 1500px;
+  min-height: 560px;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.AboutVideoBg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--linearColor);
+  opacity: 0.59;
+  z-index: -1;
+}
+.PlayWrapper a i {
+  font-size: 4.8em;
+  transition: font-size 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.PlayWrapper a i:hover {
+  font-size: 5em;
+}
+/* ******************************** */
+
+.UpcomingSection {
+  width: 100%;
+  height: 100%;
+}
+.upcomingTextContainer {
+  padding: 2em 3em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.upcomingText {
+  width: 100%;
+  height: 100%;
+  max-width: 640px;
+  min-height: 152px;
+}
+.upcomingCardContainer {
+  padding: 1em 2em;
+}
+.upcomingImg {
+  max-width: 526px;
+  min-height: 351px;
+  margin: 0 0 2em;
+}
+
+.UpcomingFlexBox {
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.upcomingContent {
+  width: 100%;
+  height: 100%;
+  max-width: 526px;
+  min-height: 201px;
+  gap: 2em;
+  align-items: start;
+}
+.eventDate {
+  position: relative;
+  top: 20px;
+  padding: 0.9em 0;
+}
+.eventDate::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  --divide-color: #18c67e;
+  background: var(--divide-color);
+  width: 49px;
+  height: 2.5px;
+}
+.upcomingCardText {
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5em;
+}
+.eventBtn {
+  width: 13em;
+  height: 2.95em;
+  margin: 0.97em 0 0;
+}
+/* Footer bg Img section */
+.footerImgContainer {
+  background-image: url(/Assets/images/pub-and-bar-template-cta-bg-img.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 10em 3em;
+}
+.footerImgContainer::after {
+  content: "";
+  position: absolute;
+  background-color: var(--linearColor);
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+.footerContentContainer {
+  text-align: center;
+}
+.footerBgSocialLink a i {
+  font-size: 4em;
+  color: var(--whiteColor);
+}
+.footerBoldtext {
+  font-size: 5em;
+  @media (max-width: 921px) {
+    font-size: 3.5em;
+  }
+}
+.footerMdboldText {
+  font-size: 3.5em;
+  @media (max-width: 921px) {
+    font-size: 2.89em;
+  }
+}
+.footerSubtext {
+  text-align: center;
+}
+.footerContent {
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+  height: 100%;
+
+  @media (max-width: 921px) {
+    max-width: 800px;
+    min-height: 438px;
+    padding: 0em 1em;
+  }
+}
+.footerBtn {
+  width: 20em;
+  height: 3em;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin: 3em 0 0 0;
+  @media (max-width: 921px) {
+    margin: 0;
+    font-size: 0.78em;
+  }
+}
+/* Footer Nav Bar */
+footer {
+  background: var(--footerBgColor);
+  padding: 2em 1em 0;
+  text-align: center;
+}
+.footerNavBar {
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 921px) {
+    flex-direction: column;
+    gap: 2em;
+  }
+}
+
+.footerSocialLink {
+  align-items: center;
+  gap: 2em;
+}
+
+.endtext {
+  padding: 2em 0 0;
+}
+.copywrite {
+  padding: 2em 0 0;
+  font-size: 0.78em;
+}
+.designerText i {
+  color: var(--hoverColor);
+}
+.designerText {
+  text-align: end;
+  padding: 3em 0 0;
+  @media (max-width: 921px) {
+    text-align: center;
+  }
+}
+/* Media Querries */
+@media (max-width: 921px) {
+  body {
+    overflow-x: hidden;
+  }
+  .HeaderImgContainer {
+    min-height: 300px;
+  }
+  .navLinks,
+  .navBtn {
+    display: none;
+  }
+  .toggle_menu {
+    display: block;
+  }
+  /* Containers */
+  .containerOne {
+    padding: 6em 0;
+  }
+  .containerTwo {
+    padding: 0 1em;
+  }
+  .containerThree {
+    padding: 4em 0;
+  }
+  .aboutBold {
+    font-size: 3.5em;
+  }
+  .content {
+    margin: 5em 2em;
+  }
+
+  .IrishBarFlexConatiner {
+    flex-direction: column;
+    gap: 3em;
+  }
+  .IrishbarImgContainer img {
+    max-width: 580px;
+    min-height: 350px;
+  }
+  .IrishBarBoldTxt {
+    font-size: 2em;
+  }
+
+  .OwnerIrishFlexConatainer {
+    flex-direction: column;
+  }
+  .textOneContainer {
+    padding: 0;
+  }
+  .OwnerBoldTxt {
+    font-size: 3em;
+  }
+  .socialText {
+    flex-direction: column;
+  }
+
+  .IrishBarTextContainer {
+    padding: 0 1em 8em;
+  }
+  .badgeImg svg {
+    max-width: 130px;
+    min-height: 130px;
+    top: -9rem;
+    right: 1rem;
+  }
+  /* ********************* */
+  .AboutVideoBg {
+    min-height: 250px;
+  }
+  .PlayWrapper a i {
+    font-size: 3em;
+  }
+  .upcomingImg {
+    min-height: 0;
+    margin: 0;
+  }
+  .upcomingContent {
+    flex-direction: column;
+  }
+  .upcomingCardContainer {
+    padding: 1em 0.98em;
+  }
+  .upcomingImg {
+    max-width: 342px;
+    min-height: 228px;
+    margin: 0;
+  }
+  .upcomingTextContainer {
+    padding: 2em 1em;
+  }
+  .upcomingCardText {
+    padding: 0 0 3em;
+  }
+  .eventBoldText {
+    font-size: 2em;
+  }
+  .upcomingCardText {
+    gap: 0;
+  }
+  .footerNavLink {
+    display: block;
+  }
+  .footerNavLink li a {
+    padding: 2em 0;
+  }
+  .footerImgContainer {
+    padding: 2em 0;
+  }
+}
