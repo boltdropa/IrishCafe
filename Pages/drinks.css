@@ -92,7 +92,7 @@ header {
   height: 100vh;
   background: var(--navBgColor);
   border-radius: 6px;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -233,6 +233,11 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0 0 4em;
+  @media (max-width: 921px) {
+    text-align: start;
+    align-items: start;
+  }
 }
 .DrinksBold {
   font-size: 3.78em;
@@ -302,9 +307,15 @@ header {
 }
 .DrinksCardBoldtext {
   font-size: 1.4em;
+  @media (max-width: 921px) {
+    font-size: 1.2em;
+  }
 }
 .DrinksCardSubtext {
   font-size: 0.789em;
+  @media (max-width: 921px) {
+    font-size: 0.7em;
+  }
 }
 /* ****************  Reviews Section **************** */
 .ReviewContainer {
@@ -575,7 +586,7 @@ footer {
     flex: 4;
   }
   .textContent {
-    padding: 0;
+    padding: 1em;
   }
   .bxBoldTxt {
     font-size: 1.7em;
@@ -598,13 +609,11 @@ footer {
     position: relative;
   }
   .boxSvg svg {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
   }
   /* ********************* */
-  .DrinksHeaderTextContainer {
-    margin: 0 0 4em;
-  }
+
   .DrinksBold {
     font-size: 2em;
   }

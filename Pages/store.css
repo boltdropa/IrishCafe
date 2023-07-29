@@ -96,7 +96,7 @@ header {
   height: 100vh;
   background: var(--navBgColor);
   border-radius: 6px;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -424,7 +424,7 @@ footer {
     flex: 4;
   }
   .textContent {
-    padding: 0;
+    padding: 1em;
   }
   .bxBoldTxt {
     font-size: 1.7em;
@@ -447,8 +447,8 @@ footer {
     position: relative;
   }
   .boxSvg svg {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
   }
   /* ********************* */
 

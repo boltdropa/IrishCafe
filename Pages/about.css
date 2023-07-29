@@ -92,7 +92,7 @@ header {
   height: 100vh;
   background: var(--navBgColor);
   border-radius: 6px;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
