@@ -464,15 +464,9 @@ header {
 }
 .footerBoldtext {
   font-size: 5em;
-  @media (max-width: 921px) {
-    font-size: 3.5em;
-  }
 }
 .footerMdboldText {
   font-size: 3.5em;
-  @media (max-width: 921px) {
-    font-size: 2.89em;
-  }
 }
 .footerSubtext {
   text-align: center;
@@ -483,12 +477,6 @@ header {
   gap: 1em;
   width: 100%;
   height: 100%;
-
-  @media (max-width: 921px) {
-    max-width: 800px;
-    min-height: 438px;
-    padding: 0em 1em;
-  }
 }
 .footerBtn {
   width: 20em;
@@ -496,10 +484,6 @@ header {
   font-size: 0.9em;
   font-weight: 600;
   margin: 3em 0 0 0;
-  @media (max-width: 921px) {
-    margin: 0;
-    font-size: 0.78em;
-  }
 }
 /* Footer Nav Bar */
 footer {
@@ -510,10 +494,6 @@ footer {
 .footerNavBar {
   align-items: center;
   justify-content: space-between;
-  @media (max-width: 921px) {
-    flex-direction: column;
-    gap: 2em;
-  }
 }
 
 .footerSocialLink {
@@ -534,9 +514,6 @@ footer {
 .designerText {
   text-align: end;
   padding: 3em 0 0;
-  @media (max-width: 921px) {
-    text-align: center;
-  }
 }
 /* Media Querries */
 @media (max-width: 921px) {
@@ -613,6 +590,10 @@ footer {
     height: 130px;
   }
   /* ********************* */
+  .DrinksHeaderTextContainer {
+    text-align: start;
+    align-items: start;
+  }
 
   .DrinksBold {
     font-size: 2em;
@@ -665,14 +646,48 @@ footer {
   .upcomingCardText {
     gap: 0;
   }
-  .footerNavLink {
-    display: block;
-  }
-  .footerNavLink li a {
-    padding: 2em 0;
-  }
   .footerImgContainer {
     padding: 2em 0;
+  }
+
+  .footerBoldtext {
+    font-size: 3.5em;
+  }
+
+  .footerMdboldText {
+    font-size: 2.89em;
+  }
+
+  .footerSubtext {
+    text-align: center;
+  }
+  .footerContent {
+    max-width: 800px;
+    min-height: 438px;
+    padding: 0em 1em;
+  }
+
+  .footerBtn {
+    margin: 0;
+    font-size: 0.78em;
+  }
+
+  .footerNavLink {
+    display: block;
+    margin: 2em 0;
+  }
+  .footerNavLink li {
+    padding: 0.4em 0;
+  }
+
+  .footerNavBar {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .designerText {
+    text-align: center;
+    margin: 0;
   }
 }
 @media (max-width: 500px) {
