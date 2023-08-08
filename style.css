@@ -92,7 +92,7 @@ header {
 }
 .dropMenu {
   width: 0%;
-  height: 100vh;
+  height: 100dvh;
   background: var(--navBgColor);
   border-radius: 6px;
   position: fixed;
