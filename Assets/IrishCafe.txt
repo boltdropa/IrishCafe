@@ -1,0 +1,8 @@
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+transform: rotate(30deg);
+
+ <span class="material-symbols-sharp"> arrow_right_alt </span>
+
